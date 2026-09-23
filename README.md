@@ -1,4 +1,4 @@
-# Gabriel AI Hub
+# Organized Hub
 
 Plataforma pessoal de Gabriel para Faculdade, Concursos, IPE Trading e Carreira & Tecnologia.
 
@@ -67,4 +67,3 @@ AI_DAILY_REQUEST_LIMIT=20
 ```
 
 The Hub sends `userId`, `agentId`, `conversationId`, `requestId`, the latest message, locale, timezone and attachment/memory placeholders to the webhook. The n8n response must include a non-empty `reply`; the backend keeps the local conversation history and uses `requestId` as the retry/idempotency key. Keep the webhook URL and secret in runtime configuration, never in client code.
-

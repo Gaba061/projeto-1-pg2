@@ -38,7 +38,7 @@ Gabriel utiliza o Hub como espaço pessoal para conversar com agentes, organizar
 
 ## Brand Commitments
 
-- Nome: Gabriel AI Hub.
+- Nome: Organized Hub.
 - Identidade pessoal associada ao nome Gabriel.
 - Comunicação principal em português do Brasil.
 - A experiência deve transmitir organização, evolução pessoal, autonomia e domínio do próprio espaço.
@@ -59,4 +59,3 @@ Gabriel utiliza o Hub como espaço pessoal para conversar com agentes, organizar
 3. Cada agente deve ter uma especialidade clara sem fragmentar a experiência geral.
 4. A arquitetura deve permitir trocar modelo, provedor e nível de custo sem reconstruir o produto.
 5. Novos espaços devem ampliar a trajetória de Gabriel sem transformar o Hub privado em uma vitrine pública.
-

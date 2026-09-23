@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Gabriel AI Hub",
+  title: "Organized Hub",
   description: "Seu espaço pessoal para faculdade, concursos, IPE Trading e carreira.",
   icons: {
     icon: "/favicon.svg",
@@ -22,4 +22,3 @@ export default function RootLayout({
     </html>
   );
 }
-

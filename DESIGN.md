@@ -1,5 +1,5 @@
 ---
-name: Gabriel AI Hub
+name: Organized Hub
 description: Painel de comando pessoal para organizar estudo, trabalho, carreira e evolução.
 colors:
   deep-ink: "#08131c"
@@ -217,4 +217,3 @@ O símbolo é um `G` maiúsculo dentro de uma moldura arredondada, acompanhado d
 - **Don't** reduzir tudo a minimalismo frio sem sinais de trajetória pessoal.
 - **Don't** espalhe todas as cores dos agentes em cada tela; preserve a hierarquia.
 - **Don't** use o ícone por cima da escrita em cartões; mantenha a ordem índice, ícone, status, título e descrição.
-

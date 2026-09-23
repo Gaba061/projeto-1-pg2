@@ -115,7 +115,7 @@ function StudioCover({onOpenHub,onChoose,onOpenCareer,onOpenProjects,onOpenFocus
   <section className="studio-hero" aria-labelledby="cover-title"><div className="studio-hero-copy"><p className="cover-kicker"><Sparkles size={14}/><span>BOM TE VER POR AQUI, GABRIEL</span></p><h1 id="cover-title">Grandes planos<br/>se constroem no <em>dia a dia.</em></h1><p>Este é o seu espaço de evolução. Organize, execute e acompanhe o que te leva mais longe.</p><button className="cover-primary" onClick={onOpenHub}>Abrir central de agentes <ArrowRight size={17}/></button></div><aside className="focus-panel"><div className="focus-quote">“</div><p>GABRIEL AI HUB</p><strong>Disciplina transforma intenções em resultados.</strong></aside><article className="focus-card"><small>QUARTA-FEIRA, 26 DE JUNHO</small><h2>Foco de hoje</h2><p>Pequenas ações, grandes resultados.</p><button onClick={onOpenHub} aria-label="Abrir foco de hoje"><ArrowRight size={17}/></button></article></section>
   <section className="studio-stations" id="destinos" aria-labelledby="destinations-title"><div className="studio-section-head"><p id="destinations-title">SEUS ESPAÇOS DE TRABALHO</p><span>04 áreas ativas</span></div><div className="studio-station-grid">{stations.map(item=>{const Icon=item.icon;return <button key={item.label} className={'studio-station '+item.tone} onClick={item.action}><div className="station-top"><span className="destination-icon"><Icon size={23}/></span><small>{item.tag}</small></div><h2>{item.label}</h2><p>{item.detail}</p><div className="station-progress"><span>Progresso do trimestre</span><b>{item.progress}</b><i><em style={{width:item.progress}}/></i></div><div className="station-next"><small>PRÓXIMO PASSO</small><span>{item.next}</span><ArrowRight size={18}/></div></button>;})}</div></section>
   <section className="studio-shelves"><button onClick={onOpenCareer} className="studio-shelf mint"><Award size={25}/><div><small>CERTIFICADOS</small><strong>Suas conquistas em um só lugar.</strong><span>Organize e acompanhe seus certificados e formações.</span></div><b>Ver certificados <ArrowRight size={15}/></b><em>12</em></button><button onClick={onOpenProjects} className="studio-shelf amber"><FolderKanban size={25}/><div><small>PROJETOS</small><strong>Ideias que viram realidade.</strong><span>Planeje, desenvolva e acompanhe seus projetos pessoais.</span></div><b>Ver projetos <ArrowRight size={15}/></b><em>5</em></button></section>
-  <footer className="studio-footer"><span>GABRIEL AI HUB <b>·</b> Estudo <b>·</b> Disciplina <b>·</b> Progresso <b>·</b> Liberdade</span><span>Versão privada 1.0 <b>·</b> <i/> Tudo sob controle.</span></footer>
+  <footer className="studio-footer"><span>ORGANIZED HUB <b>·</b> Estudo <b>·</b> Disciplina <b>·</b> Progresso <b>·</b> Liberdade</span><span>Versão privada 1.0 <b>·</b> <i/> Tudo sob controle.</span></footer>
  </main>;
 }
 
@@ -132,7 +132,7 @@ function HubCover({onOpenHub,onChoose,onOpenCareer}:{onOpenHub:()=>void;onChoose
  return <main className="hub-cover" id="workspace">
   <div className="cover-glow cover-glow-one"/><div className="cover-glow cover-glow-two"/>
   <header className="cover-nav">
-   <button className="cover-brand" onClick={onOpenHub} aria-label="Abrir painel do Gabriel AI Hub"><span className="cover-mark">G<span>·</span></span><span>Gabriel <small>AI HUB</small></span></button>
+   <button className="cover-brand" onClick={onOpenHub} aria-label="Abrir o Organized Hub"><span className="cover-mark">O<span>·</span></span><span>Organized <small>HUB</small></span></button>
    <nav aria-label="Navegação principal"><a href="#destinos">Espaços</a><button onClick={onOpenHub}>Agentes</button><a href="#em-construcao">Em construção</a></nav>
    <span className="cover-private"><ShieldCheck size={15}/> Espaço pessoal</span>
   </header>
@@ -148,9 +148,8 @@ function HubCover({onOpenHub,onChoose,onOpenCareer}:{onOpenHub:()=>void;onChoose
    <div className="destination-grid">{destinations.map((item,index)=>{const Icon=item.icon;const inner=<><span className="destination-index">0{index+1}</span><span className="destination-icon"><Icon size={22}/></span><div className="destination-copy"><small>{item.tag}</small><h3>{item.label}</h3><p>{item.detail}</p></div>{item.action?<span className="destination-arrow"><ArrowUpRight size={19}/></span>:<span className="destination-soon"><CircleDot size={15}/> em breve</span>}</>;return item.action?<button key={item.label} className={'destination-card '+item.tone} onClick={item.action}>{inner}</button>:<article key={item.label} className={'destination-card '+item.tone+' is-soon'}>{inner}</article>;})}</div>
   </section>
   <section className="cover-building" id="em-construcao"><div><p>EM CONSTRUÇÃO</p><h2>O Hub vai acompanhar<br/>o seu crescimento.</h2></div><p>Certificados já ganharam seu próprio espaço. Projetos e novas ferramentas entram nas próximas etapas.</p><button onClick={onOpenCareer}>Abrir carreira & certificados <ArrowRight size={17}/></button></section>
-  <footer className="cover-footer"><span>GABRIEL AI HUB <b>·</b> SEU ESPAÇO, DO SEU JEITO</span><span>01 / 2026</span></footer>
+  <footer className="cover-footer"><span>ORGANIZED HUB <b>·</b> SEU ESPAÇO, DO SEU JEITO</span><span>01 / 2026</span></footer>
  </main>;
 }
 
 export default function HubPage(){return <SidebarProvider><Hub/></SidebarProvider>;}
-
